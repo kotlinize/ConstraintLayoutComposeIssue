@@ -1,0 +1,180 @@
+{
+  ConstraintSets: {
+    start: {
+      nav_button: {
+        start: [
+          'parent',
+          'start'
+        ],
+        top: [
+          'parent',
+          'top'
+        ],
+      },
+      user_image: {
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ],
+        top: [
+          'parent',
+          'top'
+        ],
+      },
+      user_name: {
+        top: [
+          'user_image',
+          'bottom'
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ],
+      },
+      extra_text: {
+        top: [
+          'user_name',
+          'bottom'
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ]
+      },
+      rating_text: {
+        top: [
+          'extra_text',
+          'bottom'
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ],
+      },
+      button_bar: {
+        top: [
+          'rating_text',
+          'bottom'
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ],
+      }
+    },
+    end: {
+      nav_button: {
+        start: [
+          'parent',
+          'start'
+        ],
+        top: [
+          'parent',
+          'top'
+        ],
+      },
+      user_image: {
+        visibility: 'invisible',
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ],
+        bottom: [
+          'user_name',
+          'top',
+          16
+        ],
+      },
+      user_name: {
+        top: [
+          'nav_button',
+          'top'
+        ],
+        start: [
+          'nav_button',
+          'end',
+          4
+        ],
+        bottom: [
+          'nav_button',
+          'bottom'
+        ],
+      },
+      extra_text: {
+        visibility: 'invisible',
+        top: [
+          'user_image',
+          'bottom'
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ]
+      },
+      rating_text: {
+        visibility: 'invisible',
+        top: [
+          'extra_text',
+          'bottom'
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ],
+      },
+      button_bar: {
+        top: [
+          'user_name',
+          'bottom'
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        end: [
+          'parent',
+          'end'
+        ],
+      }
+    }
+  },
+  Transitions: {
+    default: {
+      from: 'start',
+      to: 'end',
+      pathMotionArc: 'startVertical'
+    }
+  }
+}
