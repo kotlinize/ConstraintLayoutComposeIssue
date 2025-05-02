@@ -61,6 +61,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MyApplicationTheme {
+                // Comment out SharedTransitionLayout or downgrade to constraintlayout-compose to 1.1.0 to see the correct behavior.
                 SharedTransitionLayout {
                     Content()
                 }
